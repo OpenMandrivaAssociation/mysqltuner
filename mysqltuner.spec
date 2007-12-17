@@ -12,7 +12,6 @@ Source0:	http://mysqltuner.com/mysqltuner.pl
 Requires:	mysql
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 MySQLTuner is a high-performance MySQL tuning script written in perl that will
