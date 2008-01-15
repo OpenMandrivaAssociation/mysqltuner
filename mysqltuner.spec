@@ -4,7 +4,7 @@
 Summary:	High Performance MySQL Tuning Script
 Name:		mysqltuner
 Version:	0
-Release:	%mkrel 1
+Release:	%mkrel 1.r26.1
 Group:		System/Servers
 License:	GPL
 URL:		http://rackerhacker.com/mysqltuner/
@@ -45,4 +45,3 @@ rm -rf %{buildroot}
 %files
 %defattr(0755,root,root)
 %attr(0755,root,root) %{_sbindir}/%{name}
-
