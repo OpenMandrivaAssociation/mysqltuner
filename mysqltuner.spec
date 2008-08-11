@@ -3,7 +3,7 @@
 
 Summary:	High Performance MySQL Tuning Script
 Name:		mysqltuner
-Version:	0.9.1
+Version:	0.9.8
 Release:	%mkrel 1
 Group:		System/Servers
 License:	GPLv3+
@@ -12,7 +12,7 @@ Source0:	http://mysqltuner.com/mysqltuner.pl
 Requires:	mysql
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 MySQLTuner is a high-performance MySQL tuning script written in perl that will
