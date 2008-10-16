@@ -3,7 +3,7 @@
 
 Summary:	High Performance MySQL Tuning Script
 Name:		mysqltuner
-Version:	0.9.8
+Version:	0.9.9
 Release:	%mkrel 1
 Group:		System/Servers
 License:	GPLv3+
