@@ -4,7 +4,7 @@
 Summary:	High Performance MySQL Tuning Script
 Name:		mysqltuner
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Servers
 License:	GPLv3+
 URL:		http://rackerhacker.com/mysqltuner/
