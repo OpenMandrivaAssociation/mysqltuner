@@ -29,7 +29,7 @@ MySQL tuning primer script.
 %setup -q -c -T
 
 cp %{SOURCE0} %{name}
-dos2unix -U %{name}
+dos2unix %{name}
 
 %build
 
