@@ -3,8 +3,8 @@
 
 Summary:	High Performance MySQL Tuning Script
 Name:		mysqltuner
-Version:	1.1.1
-Release:	%mkrel 3
+Version:	1.2.0
+Release:	%mkrel 1
 Group:		System/Servers
 License:	GPLv3+
 URL:		http://rackerhacker.com/mysqltuner/
@@ -12,7 +12,6 @@ Source0:	http://mysqltuner.com/mysqltuner.pl
 Requires:	mysql
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 MySQLTuner is a high-performance MySQL tuning script written in perl that will
@@ -26,22 +25,15 @@ MySQL tuning primer script.
 
 %prep
 
-%setup -q -c -T
+%setup -c -T
 
 cp %{SOURCE0} %{name}
-dos2unix %{name}
 
 %build
 
 %install
-rm -rf %{buildroot}
-
 install -d %{buildroot}%{_sbindir}
 install -m0755 %{name} %{buildroot}%{_sbindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(0755,root,root)
-%attr(0755,root,root) %{_sbindir}/%{name}
+%{_sbindir}/%{name}
