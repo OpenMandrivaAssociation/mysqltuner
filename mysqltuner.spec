@@ -7,7 +7,7 @@ Version:	2.5.2
 Release:	1
 Group:		System/Servers
 License:	GPLv3+
-URL:		http://rackerhacker.com/mysqltuner/
+URL:		https://rackerhacker.com/mysqltuner/
 Source0:	http://mysqltuner.com/mysqltuner.pl
 Requires:	mysql
 BuildArch:	noarch
